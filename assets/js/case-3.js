@@ -47,7 +47,7 @@ function startAnimation() {
                     forward = true;
                 }
             }
-        }, 45.9);
+        }, 64);
     }
 }
 
