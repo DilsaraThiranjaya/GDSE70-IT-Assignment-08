@@ -1,4 +1,10 @@
 const boxes = $('.box').toArray();
+const kittAudio = new Audio('/assets/audio/kitt_scanner.mp3');
+const themeAudio = new Audio('/assets/audio/Knight-Rider-Theme-Song.mp3');
+kittAudio.loop = true;
+themeAudio.loop = true;
+themeAudio.play();
+themeAudio.volume = 0.2;
 let index = 0;
 let forward = true;
 let kittAnimation;
@@ -41,7 +47,7 @@ function startAnimation() {
                     forward = true;
                 }
             }
-        }, 50);
+        }, 45.9);
     }
 }
 
@@ -52,8 +58,10 @@ function stopAnimation() {
 
 $('#start').click(() => {
     startAnimation();
+    kittAudio.play();
 });
 
 $('#stop').click(() => {
     stopAnimation();
+    kittAudio.pause();
 });
