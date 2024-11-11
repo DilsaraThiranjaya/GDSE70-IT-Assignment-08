@@ -4,6 +4,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
+    background-color: #E7E7E7;
 }
 
 #title {
@@ -69,4 +70,19 @@ body {
     font-size: 1.4rem;
     font-weight: bold;
     color: rgb(0, 158, 158);
+}
+
+.buttons button {
+    height: 30px;
+    width: 60px;
+    background-color: rgb(74, 89, 139);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 2px 0;
+}
+
+.buttons button:hover {
+    background-color: rgb(56, 76, 139);
 }
